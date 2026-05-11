@@ -1,0 +1,24 @@
+# Data
+data/raw/*
+data/processed/*
+*.zip
+*.tar
+
+# Models (too large)
+models/*.h5
+models/*.pt
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+
+# OS
+.DS_Store
+.vscode/
