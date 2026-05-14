@@ -37,13 +37,14 @@ class SignLanguageModel_ResNet50:
         """Compile with optimizer and loss"""
         model.compile(
             optimizer = tf.keras.optimizers.Adam(learning_rate=0.001),
-            loss = 'categorical_crossentropy',
+            loss = 'sparse_categorical_crossentropy',
             metrics = ['accuracy']
         )
 
         return model
         
 
+# testing model building and compilation
 model_builder_resnet50 = SignLanguageModel_ResNet50(num_classes=24)
 model = model_builder_resnet50.build_model()
 model = model_builder_resnet50.compile_model(model)
