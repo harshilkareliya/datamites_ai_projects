@@ -5,6 +5,8 @@ run files in this order
 3. src/model.py
 4. src/training.py
 5. notebooks/02_training.ipynb
+6. notebooks/03_evalution.ipynb
+
 
 
 
