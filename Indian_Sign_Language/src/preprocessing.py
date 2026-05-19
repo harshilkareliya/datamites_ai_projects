@@ -28,7 +28,7 @@ class DataPreprocessor:
 
             labels_name.append(class_name)
 
-            for img_file in os.listdir(class_path)[:10]:
+            for img_file in os.listdir(class_path):
                 if img_file.endswith(('.png', '.jpg', '.jpeg')):
                     try:
                         img_path = os.path.join(class_path,img_file)
